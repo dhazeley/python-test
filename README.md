@@ -10,8 +10,6 @@
 - Install all dependencies
   `pipenv install --dev`
 
-- Copy the `.env.example` file into your own `.env` file. ENV variable updates should be made in `.env` and is never comitted to git.
-
 - Run development server
   `pipenv run dev`
 
