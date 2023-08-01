@@ -1,0 +1,5 @@
+GET http://localhost:6000/health HTTP/1.1
+
+########################### CHAT COMPLETION API ###########################
+
+GET http://localhost:6000/gpt/health HTTP/1.1

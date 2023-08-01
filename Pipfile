@@ -1,0 +1,34 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+firebase-admin = "*"
+google-cloud-firestore = "*"
+pandas = "*"
+numpy = "*"
+scipy = "*"
+flask = "*"
+google-cloud-logging = "*"
+sklearn = "*"
+google = "*"
+scikit-learn = "*"
+jsonschema = "*"
+kmodes = "*"
+openai = "*"
+tiktoken = "*"
+translators = "*"
+
+[dev-packages]
+flake8 = "5.0.4"
+black = "23.3.0"
+jupyter = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+dev = "pipenv run python src/main.py"
+build = "docker build -t pqaas-model ."
+start = "docker run --name pqaas-model -p ${PORT}:${PORT} --env-file ./.env pqaas-model"
