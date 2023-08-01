@@ -31,4 +31,4 @@ python_version = "3.8"
 [scripts]
 dev = "pipenv run python src/main.py"
 build = "docker build -t pqaas-model ."
-start = "docker run --name pqaas-model -p ${PORT}:${PORT} --env-file ./.env pqaas-model"
+start = "docker run --name pqaas-model -p ${PORT}:${PORT} --env-file ./.env --rm pqaas-model"
